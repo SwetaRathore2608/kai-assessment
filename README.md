@@ -9,13 +9,17 @@
 3. Install Azure CLI -  https://learn.microsoft.com/en-us/cli/azure/install-azure-cli
 4. You might also need to add the azure secrets in the environment variables for authentication purposes - 
 
+```
 export ARM_SUBSCRIPTION_ID="your-subscription-id"
 export ARM_TENANT_ID="your-tenant-id"
 export ARM_CLIENT_ID="your-client-id"
 export ARM_CLIENT_SECRET="your-client-secret"
+```
 
+```
 source ~/.zshrc
-   
+```
+
 ---
 
 ### Steps to run this module - 
