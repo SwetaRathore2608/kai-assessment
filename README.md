@@ -25,30 +25,40 @@ source ~/.zshrc
 ### Steps to run this module - 
 Step 1 
 Login to the azure cli
-command - az login
+```
+az login
+```
 
 Step 2 
 Pull this repository in your local
+```
 gh repo clone SwetaRathore2608/kai-assessment
+```
 
 Step 3
 Run the below terraform commands to create the resources-
 
+```
 terraform init
 terraform validate
 terraform plan
 terraform apply
+```
 
 Run the below command to destroy all the created resources - 
+
+```
 terraform destroy
+```
 
 Output/Logs
 
+```
 module.database.azurerm_postgresql_flexible_server.db: Creation complete after 6m3s [id=/subscriptions/623c0eb4-cfc0-4f05-9ade-d65bdd2b6752/resourceGroups/kai-assessment-group/providers/Microsoft.DBforPostgreSQL/flexibleServers/rg-gull-db]
 Apply complete! Resources: 14 added, 0 changed, 0 destroyed.
 Outputs:
 resource_group_name = "kai-assessment-group"
-
+```
 
 Please find the complete output logs in the "Outputs/output-logs.txt" file.
 
