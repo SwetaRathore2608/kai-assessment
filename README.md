@@ -102,6 +102,8 @@ I have designed and implemented a very basic pipeline -
 3. Pick the image and deploy it into the AKS cluster
 4. Rollback functinality incase of failure at any step
 
+This pipeline can be improved in several aspects such as security, versioning, testing and better pipeline structure. 
+
 ### Implementation steps
 
 1. From the Azure Devops web portal, navigate to the devops organization
