@@ -91,7 +91,6 @@ resource "azurerm_subnet_nat_gateway_association" "subnet_nat_association" {
 }
 
 # Create a Subnet with Private Access
-# TODO - create a NAT gateway and nsg
 resource "azurerm_subnet" "private" {
   name                 = "private-subnet"
   resource_group_name  = var.resource_group_name

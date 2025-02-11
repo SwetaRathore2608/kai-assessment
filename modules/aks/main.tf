@@ -1,3 +1,4 @@
+# AKS Creation
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = var.aks_name
   location            = var.location

@@ -10,4 +10,6 @@ resource "azurerm_postgresql_flexible_server" "db" {
 
   storage_mb            = var.storage_mb
   backup_retention_days = var.backup_retention_days
+
+  version                = "14"
 }

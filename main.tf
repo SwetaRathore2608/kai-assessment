@@ -33,6 +33,7 @@ module "vnet" {
 
 }
 
+# Creates Azure Kubernetes Service
 module "aks" {
   source              = "./modules/aks"
   aks_name            = "${random_pet.prefix.id}-aks"
@@ -46,6 +47,7 @@ module "aks" {
   dns_service_ip      = "10.1.0.10"
 }
 
+# Creates a database in Azure
 module "database" {
   source                = "./modules/database"
   db_name               = "${random_pet.prefix.id}-db"
@@ -58,13 +60,15 @@ module "database" {
   backup_retention_days = 14
 }
 
+# Creates a storage in Azure
 module "storage" {
   source               = "./modules/storage"
-  storage_account_name = "mystorage"
+  storage_account_name = "myassessmentstorage"
   resource_group_name  = azurerm_resource_group.rg.name
   location             = var.location
 }
 
+# Random name generation
 resource "random_pet" "prefix" {
   prefix = var.resource_group_name_prefix
   length = 1
